@@ -82,8 +82,8 @@
 #include <openssl/crypto.h>
 #include <openssl/rand.h>
 
-const char * const PIVX_CONF_FILENAME = "pivx.conf";
-const char * const PIVX_PID_FILENAME = "pivx.pid";
+const char * const PIVX_CONF_FILENAME = "allforonebusiness.conf";
+const char * const PIVX_PID_FILENAME = "allforonebusiness.pid";
 const char * const PIVX_MASTERNODE_CONF_FILENAME = "masternode.conf";
 
 
@@ -331,7 +331,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "pivx";
+    const char* pszModule = "allforonebusiness";
 #endif
     if (pex)
         return strprintf(
@@ -369,10 +369,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "PIVX";
+    return pathRet / "AllForOneBusiness";
 #else
     // Unix
-    return pathRet / ".pivx";
+    return pathRet / ".allforonebusiness";
 #endif
 #endif
 }

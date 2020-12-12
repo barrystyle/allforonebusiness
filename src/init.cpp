@@ -726,6 +726,8 @@ static void LoadSaplingParams()
     float elapsed;
     gettimeofday(&tv_start, 0);
 
+    return; //! maybe later
+
     try {
         initZKSNARKS();
     } catch (std::runtime_error &e) {

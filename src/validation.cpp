@@ -791,28 +791,24 @@ CAmount GetBlockValue(int nHeight)
         return 250000 * COIN;
     }
     // Mainnet/Testnet block reward reduction schedule
-    const int nLast = isTestnet ? 648000 : Params().GetConsensus().vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight;
-    if (nHeight > nLast)   return 5    * COIN;
-    if (nHeight > 648000)  return 4.5  * COIN;
-    if (nHeight > 604800)  return 9    * COIN;
-    if (nHeight > 561600)  return 13.5 * COIN;
-    if (nHeight > 518400)  return 18   * COIN;
-    if (nHeight > 475200)  return 22.5 * COIN;
-    if (nHeight > 432000)  return 27   * COIN;
-    if (nHeight > 388800)  return 31.5 * COIN;
-    if (nHeight > 345600)  return 36   * COIN;
-    if (nHeight > 302400)  return 40.5 * COIN;
-    const int nSecond = isTestnet ? 145000 : 151200;
-    if (nHeight > nSecond) return 45   * COIN;
-    if (nHeight > 86400)   return 225  * COIN;
-    if (nHeight !=1)       return 250  * COIN;
-    // Premine for 6 masternodes at block 1
-    return 60001 * COIN;
+    const int nLast = Params().GetConsensus().vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight;
+    if (nHeight > nLast)
+        return 1.5 * COIN;
+    if (nHeight > 120000)
+        return 11 * COIN;
+    if (nHeight > 1000)
+        return 45 * COIN;
+    if (nHeight != 1)
+        return 1000 * COIN;
+    return 1000000 * COIN;
 }
 
 int64_t GetMasternodePayment()
 {
-    return 3 * COIN;
+    const int nHeight = chainActive.Height();
+    if (nHeight > Params().GetConsensus().vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight)
+        return 0.75 * GetBlockValue(nHeight);
+    return 0.9 * GetBlockValue(nHeight);
 }
 
 bool IsInitialBlockDownload()
@@ -2664,16 +2660,16 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     if (fCheckPOW && !CheckProofOfWork(block.GetHash(), block.nBits))
         return state.DoS(50, false, REJECT_INVALID, "high-hash", false, "proof of work failed");
 
-    if (Params().IsRegTestNet()) return true;
-
-    // Version 4 header must be used after consensus.ZC_TimeStart. And never before.
-    if (block.GetBlockTime() > Params().GetConsensus().ZC_TimeStart) {
-        if(block.nVersion < 4)
-            return state.DoS(50,false, REJECT_INVALID, "block-version", "must be above 4 after ZC_TimeStart");
-    } else {
-        if (block.nVersion >= 4)
-            return state.DoS(50,false, REJECT_INVALID, "block-version", "must be below 4 before ZC_TimeStart");
-    }
+//  if (Params().IsRegTestNet()) return true;
+//
+//  // Version 4 header must be used after consensus.ZC_TimeStart. And never before.
+//  if (block.GetBlockTime() > Params().GetConsensus().ZC_TimeStart) {
+//      if(block.nVersion < 4)
+//          return state.DoS(50,false, REJECT_INVALID, "block-version", "must be above 4 after ZC_TimeStart");
+//  } else {
+//      if (block.nVersion >= 4)
+//          return state.DoS(50,false, REJECT_INVALID, "block-version", "must be below 4 before ZC_TimeStart");
+//  }
 
     return true;
 }
