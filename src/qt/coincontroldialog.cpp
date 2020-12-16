@@ -489,19 +489,13 @@ void CoinControlDialog::updateLabels()
     if (!model)
         return;
 
-    ui->labelTitle->setText(fSelectTransparent ?
-            "Select PIV Outputs to Spend" :
-            "Select Shielded PIV to Spend");
-
-    // nPayAmount (!todo fix dust)
+    // nPayAmount
     CAmount nPayAmount = 0;
     bool fDust = false;
-    for (const auto& amount : payAmounts) {
-        nPayAmount += amount.first;
-        if (amount.first > 0) {
-            CTxOut txout(amount.first, (CScript)std::vector<unsigned char>(24, 0));
-            if (IsDust(txout, ::minRelayTxFee))
-                fDust = true;
+    Q_FOREACH (const CAmount& amount, payAmounts) {
+        nPayAmount += amount;
+        if (amount > 0) {
+            CTxOut txout(amount, (CScript)std::vector<unsigned char>(24, 0));
         }
     }
 
@@ -532,25 +526,15 @@ void CoinControlDialog::updateLabels()
     updatePushButtonSelectAll(coinControl->QuantitySelected() * 2 > nSelectableInputs);
 
     // calculation
+    const int P2PKH_OUT_SIZE = 34;
     const int P2CS_OUT_SIZE = 61;
     if (nQuantity > 0) {
-        bool isShieldedTx = !fSelectTransparent;
-        // Bytes: nBytesInputs + (sum of nBytesOutputs)
+        // Bytes: nBytesInputs + (num_of_outputs * bytes_per_output)
+        nBytes = nBytesInputs + std::max(1, payAmounts.size()) * (forDelegation ? P2CS_OUT_SIZE : P2PKH_OUT_SIZE);
         // always assume +1 (p2pkh) output for change here
-        nBytes = nBytesInputs + (fSelectTransparent ? CTXOUT_REGULAR_SIZE : OUTPUTDESCRIPTION_SIZE);
-        for (const auto& a : payAmounts) {
-            bool shieldedOut = a.second;
-            isShieldedTx |= shieldedOut;
-            nBytes += (shieldedOut ? OUTPUTDESCRIPTION_SIZE
-                                   : (forDelegation ? P2CS_OUT_SIZE : CTXOUT_REGULAR_SIZE));
-        }
-
-        // Shielded txes must include binding sig and valueBalance
-        if (isShieldedTx) {
-            nBytes += (BINDINGSIG_SIZE + 8);
-            // (plus at least 2 bytes for shielded in/outs len sizes)
-            nBytes += 2;
-        }
+        nBytes += P2PKH_OUT_SIZE;
+        // nVersion, nLockTime and vin/vout len sizes
+        nBytes += 10;
 
         // !TODO: ExtraPayload size for special txes. For now 1 byte for nullopt.
         nBytes += 1;
@@ -559,7 +543,7 @@ void CoinControlDialog::updateLabels()
         nBytes += 10;
 
         // Fee (default K fixed for shielded fee for now)
-        nPayFee = GetMinRelayFee(nBytes, false) * (isShieldedTx ? DEFAULT_SHIELDEDTXFEE_K : 1);
+        nPayFee = GetMinRelayFee(nBytes, false);
 
         if (nPayAmount > 0) {
             nChange = nAmount - nPayFee - nPayAmount;
@@ -581,7 +565,7 @@ void CoinControlDialog::updateLabels()
     }
 
     // actually update labels
-    int nDisplayUnit = BitcoinUnits::PIV;
+    int nDisplayUnit = BitcoinUnits::AFO;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 
@@ -822,9 +806,9 @@ void CoinControlDialog::clearPayAmounts()
     payAmounts.clear();
 }
 
-void CoinControlDialog::addPayAmount(const CAmount& amount, bool isShieldedRecipient)
+void CoinControlDialog::addPayAmount(const CAmount& amount)
 {
-    payAmounts.emplace_back(amount, isShieldedRecipient);
+    payAmounts.push_back(amount);
 }
 
 void CoinControlDialog::updatePushButtonSelectAll(bool checked)

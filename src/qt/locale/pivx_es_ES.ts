@@ -418,8 +418,8 @@ para staking</translation>
         <translation>Ahorros</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 AFO</source>
+        <translation>0,00 AFO</translation>
     </message>
     <message>
         <source>address</source>
@@ -460,8 +460,8 @@ para staking</translation>
         <translation>Selección de Moneda</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Seleccionar Salidas PIV para Gastar</translation>
+        <source>Select AFO Outputs to Spend</source>
+        <translation>Seleccionar Salidas AFO para Gastar</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -488,8 +488,8 @@ para staking</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 AFO</source>
+        <translation>0.00 AFO</translation>
     </message>
     <message>
         <source>0</source>
@@ -737,7 +737,7 @@ para staking</translation>
     <message>
         <source>You can delegate your PIVs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Puedes delegar tus PIV, dejando un nodo activo (nodo en línea 24/7)
+        <translation>Puedes delegar tus AFO, dejando un nodo activo (nodo en línea 24/7)
 Haga Stake en tu nombre, manteniendo las llaves en un lugar seguro fuera de línea.</translation>
     </message>
     <message>
@@ -745,8 +745,8 @@ Haga Stake en tu nombre, manteniendo las llaves en un lugar seguro fuera de lín
         <translation>Ingresa la dirección del propietario</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Aceptar delegación de PIV / PIV Delegados</translation>
+        <source>Accept AFO delegation / Delegate AFO</source>
+        <translation>Aceptar delegación de AFO / AFO Delegados</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -941,8 +941,8 @@ del propietario </translation>
         <translation>Filtrar por</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Cantidad de PIV y zPIV por stake.</translation>
+        <source>Amount of AFO and zPIV staked.</source>
+        <translation>Cantidad de AFO y zPIV por stake.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1280,8 +1280,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Crear Nuevo Controlador de Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Para crear un Masternode de PIVX debes desponer 10.000 PIV (la unidad de PIVX) a la red (sin embargo, estas monedas siguen siendo tuyas y nunca saldrán de tu posesión). Puedes desactivar el nodo y desbloquear las monedas en cualquier momento.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 AFO (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Para crear un Masternode de PIVX debes desponer 10.000 AFO (la unidad de PIVX) a la red (sin embargo, estas monedas siguen siendo tuyas y nunca saldrán de tu posesión). Puedes desactivar el nodo y desbloquear las monedas en cualquier momento.</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1300,8 +1300,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Asegúrate de tener esta cantidad de monedas.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Una transacción de 10,000 PIV se hará a una nueva dirección vacía en tu wallet.  La dirección está etiquetada bajo el nombre de masternode. </translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AFO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Una transacción de 10,000 AFO se hará a una nueva dirección vacía en tu wallet.  La dirección está etiquetada bajo el nombre de masternode. </translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1739,8 +1739,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Activar la conversión automática de unidades PIV a zPIV</translation>
+        <source>Enable automatic minting of AFO units to zPIV</source>
+        <translation>Activar la conversión automática de unidades AFO a zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
@@ -1755,16 +1755,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Habilitar direcciones de Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de PIV entrantes que serán automáticamente convertidos a zPIV a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming AFO which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de AFO entrantes que serán automáticamente convertidos a zPIV a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Porcentaje de zPIV autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes PIV disponibles para este tamaño de esa denominación</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AFO for this denomination is available</source>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes AFO disponibles para este tamaño de esa denominación</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2830,8 +2830,8 @@ Dirección: %4
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>AFO</source>
+        <translation>AFO</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2936,8 +2936,8 @@ Dirección: %4
         <translation>Recomendada</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilobyte</translation>
+        <source>AFO/kilobyte</source>
+        <translation>AFO/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3522,8 +3522,8 @@ Ha habido un error al tratar de guardar la libreta de direcciones en %1. Por fav
         <translation>1) ¿Qué es PIVX?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) ¿Por qué mis PIV no se pueden gastar?</translation>
+        <source>2) Why are my AFO unspendable?</source>
+        <translation>2) ¿Por qué mis AFO no se pueden gastar?</translation>
     </message>
     <message>
         <source>1</source>
@@ -3560,8 +3560,8 @@ PIVX es una forma de dinero digital en línea que utiliza la tecnología blockch
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>¿Por qué mi PIV no se pueden gastar?</translation>
+        <source>Why are my AFO unspendable?</source>
+        <translation>¿Por qué mi AFO no se pueden gastar?</translation>
     </message>
     <message>
         <source>
@@ -3609,14 +3609,14 @@ Tu wallet PIVX también necesita estar completamente sincronizada para que pueda
         <translation>¿Qué es un Controlador de Masternode?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Una wallet del controlador Masternode es donde la garantía de 10,000 PIV puede almacenarse durante la configuración de un masternode controlador-remoto. Esta es una wallet que puede activar la wallet (s) del masternode remoto y te permite mantener tus monedas colaterales fuera de línea mientras el masternode remoto permanece en línea. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AFO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Una wallet del controlador Masternode es donde la garantía de 10,000 AFO puede almacenarse durante la configuración de un masternode controlador-remoto. Esta es una wallet que puede activar la wallet (s) del masternode remoto y te permite mantener tus monedas colaterales fuera de línea mientras el masternode remoto permanece en línea. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 AFO secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3648,7 +3648,7 @@ Tu wallet PIVX también necesita estar completamente sincronizada para que pueda
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3658,7 +3658,7 @@ Tu wallet PIVX también necesita estar completamente sincronizada para que pueda
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 Un Masternode es un ordenador que ejecuta una Core Wallet de PIVX de nodo
-completo con un requisito de 10.000 PIV de garantía asegurados para prestar servicios
+completo con un requisito de 10.000 AFO de garantía asegurados para prestar servicios
 adicionales a la red y a cambio, recibir una parte de la recompensa del bloque
 regularmente. Estos servicios incluyen:
 &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3689,7 +3689,7 @@ Ventajas de los Masternodes:
 Requisitos:
 &lt;/p&gt;
 &lt;p align="justify"&gt;&lt;ul&gt;
-&lt;li&gt;10.000 PIV por cada instancia de Masternode&lt;/li&gt;
+&lt;li&gt;10.000 AFO por cada instancia de Masternode&lt;/li&gt;
 &lt;li&gt;Debe guardarse en una wallet principal&lt;/li&gt;
 &lt;li&gt;Necesita una dirección IP dedicada&lt;/li&gt;
 &lt;li&gt;La wallet Masternode permanecerá en línea&lt;/li&gt;
@@ -5591,8 +5591,8 @@ PIVX Core Wallet</translation>
         <translation>Máscara de red inválida especificada en -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Recalculando suministro PIV...</translation>
+        <source>Recalculating AFO supply...</source>
+        <translation>Recalculando suministro AFO...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

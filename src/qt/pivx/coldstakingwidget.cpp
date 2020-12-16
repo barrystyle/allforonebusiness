@@ -547,7 +547,7 @@ void ColdStakingWidget::setCoinControlPayAmounts()
 {
     if (!coinControlDialog) return;
     coinControlDialog->clearPayAmounts();
-    coinControlDialog->addPayAmount(sendMultiRow->getAmountValue(), false);
+    coinControlDialog->addPayAmount(sendMultiRow->getAmountValue());
 }
 
 void ColdStakingWidget::onColdStakeClicked()

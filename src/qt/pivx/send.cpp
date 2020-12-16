@@ -44,13 +44,9 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     setCssProperty(ui->labelTitle, "text-title-screen");
     ui->labelTitle->setFont(fontLight);
 
-    /* Button Group */
-    setCssProperty(ui->pushLeft, "btn-check-left");
-    ui->pushLeft->setChecked(true);
-    setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    setCssProperty({ui->labelSubtitle1, ui->labelSubtitle2}, "text-subtitle");
+    setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     /* Address - Amount*/
     setCssProperty({ui->labelSubtitleAddress, ui->labelSubtitleAmount}, "text-title");
@@ -74,15 +70,10 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     ui->btnUri->setTitleClassAndText("btn-title-grey", tr("Open URI"));
     ui->btnUri->setSubTitleClassAndText("text-subtitle", tr("Parse a payment request"));
 
-    // Shield coins
-    ui->btnShieldCoins->setTitleClassAndText("btn-title-grey", tr("Shield Coins"));
-    ui->btnShieldCoins->setSubTitleClassAndText("text-subtitle", tr("Convert all transparent coins into shielded coins"));
-
     connect(ui->pushButtonFee, &QPushButton::clicked, this, &SendWidget::onChangeCustomFeeClicked);
     connect(ui->btnCoinControl, &OptionButton::clicked, this, &SendWidget::onCoinControlClicked);
     connect(ui->btnChangeAddress, &OptionButton::clicked, this, &SendWidget::onChangeAddressClicked);
     connect(ui->btnUri, &OptionButton::clicked, this, &SendWidget::onOpenUriClicked);
-    connect(ui->btnShieldCoins, &OptionButton::clicked, this, &SendWidget::onShieldCoinsClicked);
     connect(ui->pushButtonReset, &QPushButton::clicked, [this](){ onResetCustomOptions(true); });
     connect(ui->checkBoxDelegations, &QCheckBox::stateChanged, this, &SendWidget::onCheckBoxChanged);
 
@@ -120,8 +111,6 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     setCustomFeeSelected(false);
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &SendWidget::onSendClicked);
     connect(ui->pushButtonAddRecipient, &QPushButton::clicked, this, &SendWidget::onAddEntryClicked);
     connect(ui->pushButtonClear, &QPushButton::clicked, [this](){clearAll(true);});
@@ -526,33 +515,6 @@ bool SendWidget::sendFinalStep()
     return false;
 }
 
-void SendWidget::run(int type)
-{
-    assert(!processingResult);
-    if (type == REQUEST_PREPARE_TX) {
-        if (!isProcessing) {
-            isProcessing = true;
-            OperationResult result(false);
-            if ((result = ptrModelTx->useV2 ?
-                        prepareShielded(ptrModelTx, isTransparent) :
-                        prepareTransparent(ptrModelTx)
-                        )) {
-                processingResult = true;
-            } else {
-                processingResult = false;
-                processingResultError = tr(result.getError().c_str());
-            }
-            isProcessing = false;
-        }
-    }
-}
-
-void SendWidget::onError(QString error, int type)
-{
-    isProcessing = false;
-    processingResultError = error;
-}
-
 void SendWidget::updateEntryLabels(QList<SendCoinsRecipient> recipients)
 {
     for (SendCoinsRecipient rec : recipients) {
@@ -655,7 +617,6 @@ void SendWidget::onChangeCustomFeeClicked()
 void SendWidget::onCoinControlClicked()
 {
     if (walletModel->getBalance() > 0) {
-        coinControlDialog->setSelectionType(isTransparent);
         coinControlDialog->refreshDialog();
         setCoinControlPayAmounts();
         coinControlDialog->exec();
@@ -666,69 +627,6 @@ void SendWidget::onCoinControlClicked()
     }
 }
 
-void SendWidget::onShieldCoinsClicked()
-{
-    if (!walletModel->isSaplingEnforced()) {
-        inform(tr("Cannot perform shielded operations, v5 upgrade isn't being enforced yet!"));
-        return;
-    }
-
-    auto balances = walletModel->GetWalletBalances();
-    CAmount availableBalance = balances.balance - balances.shielded_balance - walletModel->getLockedBalance();
-    if (walletModel && availableBalance > 0) {
-
-        // Calculate the required fee first. TODO future: Unify this code with the code in coincontroldialog into the model.
-        std::map<WalletModel::ListCoinsKey, std::vector<WalletModel::ListCoinsValue>> mapCoins;
-        walletModel->listCoins(mapCoins);
-        unsigned int nBytesInputs = 0;
-        for (const auto& out : mapCoins) {
-            bool isP2CS = out.first.stakerAddress != nullopt;
-            nBytesInputs += (CTXIN_SPEND_DUST_SIZE + (isP2CS ? 1 : 0)) * out.second.size();
-        }
-        nBytesInputs += OUTPUTDESCRIPTION_SIZE;
-        nBytesInputs += (BINDINGSIG_SIZE + 8);
-        // (plus at least 2 bytes for shielded in/outs len sizes)
-        nBytesInputs += 2;
-        // ExtraPayload size for special txes. For now 1 byte for nullopt.
-        nBytesInputs += 1;
-        // nVersion, nType, nLockTime and vin/vout len sizes
-        nBytesInputs += 10;
-        CAmount nPayFee = GetMinRelayFee(nBytesInputs, false) * DEFAULT_SHIELDEDTXFEE_K;
-
-        // load recipient
-        QList<SendCoinsRecipient> recipients;
-        SendCoinsRecipient recipient;
-        recipient.amount = availableBalance - nPayFee;
-        recipient.isShieldedAddr = true;
-        recipients.append(recipient); // address is added later on, when the wallet is unlocked
-
-        // Ask if the user want to do it
-        if (!ask(tr("Shield Coins"),
-                 tr("You are just about to anonymize all of your balance!\nAvailable %1\nWith fee %2\n\n"
-                    "Meaning that you will be able to perform completely\nanonymous transactions"
-                    "\n\nDo you want to continue?\n").arg(GUIUtil::formatBalanceWithoutHtml(recipient.amount, nDisplayUnit, false))
-                                                     .arg(GUIUtil::formatBalanceWithoutHtml(nPayFee, nDisplayUnit, false))
-                    )) {
-            return;
-        }
-
-        // Process spending
-        ProcessSend(recipients, true, [this](QList<SendCoinsRecipient>& recipients) {
-            QString strAddress;
-            auto res = walletModel->getNewShieldedAddress(strAddress, "");
-            // Check for generation errors
-            if (!res.result) {
-                inform(tr("Error generating address to shield PIVs"));
-                return false;
-            }
-            recipients.back().address = strAddress;
-            resetCoinControl();
-            return true;
-        });
-    } else {
-        inform(tr("You don't have any transparent PIVs to shield."));
-    }
-}
 
 void SendWidget::setCoinControlPayAmounts()
 {
@@ -736,8 +634,7 @@ void SendWidget::setCoinControlPayAmounts()
     coinControlDialog->clearPayAmounts();
     QMutableListIterator<SendMultiRow*> it(entries);
     while (it.hasNext()) {
-        const auto& entry = it.next();
-        coinControlDialog->addPayAmount(entry->getAmountValue(), entry->getValue().isShieldedAddr);
+        coinControlDialog->addPayAmount(it.next()->getAmountValue());
     }
 }
 
@@ -755,22 +652,6 @@ void SendWidget::onCheckBoxChanged()
     }
 }
 
-void SendWidget::onPIVSelected(bool _isTransparent)
-{
-    isTransparent = _isTransparent;
-
-    if (!isTransparent && !walletModel->isSaplingEnforced()) {
-        ui->pushLeft->setChecked(true);
-        inform(tr("Cannot perform shielded operations, v5 upgrade isn't being enforced yet!"));
-        return;
-    }
-
-    resetChangeAddress();
-    resetCoinControl();
-    refreshAmounts();
-    updateStyle(coinIcon);
-}
-
 void SendWidget::onContactsClicked(SendMultiRow* entry)
 {
     focusedEntry = entry;
@@ -778,8 +659,7 @@ void SendWidget::onContactsClicked(SendMultiRow* entry)
         menu->hide();
     }
 
-    int contactsSize = walletModel->getAddressTableModel()->sizeSend() +
-                        walletModel->getAddressTableModel()->sizeShieldedSend();
+    int contactsSize = walletModel->getAddressTableModel()->sizeSend();
     if (contactsSize == 0) {
         inform(tr("No contacts available, you can go to the contacts screen and add some there!"));
         return;
@@ -794,7 +674,7 @@ void SendWidget::onContactsClicked(SendMultiRow* entry)
                     height,
                     this
         );
-        menuContacts->setWalletModel(walletModel, {AddressTableModel::Send, AddressTableModel::ShieldedSend});
+        menuContacts->setWalletModel(walletModel, AddressTableModel::Send);
         connect(menuContacts, &ContactsDropdown::contactSelected, [this](QString address, QString label) {
             if (focusedEntry) {
                 if (label != "(no label)")
@@ -839,13 +719,12 @@ void SendWidget::onMenuClicked(SendMultiRow* entry)
 
     if (!this->menu) {
         this->menu = new TooltipMenu(window, this);
-        this->menu->setCopyBtnText(tr("Add Memo"));
+        this->menu->setCopyBtnVisible(false);
         this->menu->setEditBtnText(tr("Save contact"));
         this->menu->setMinimumSize(this->menu->width() + 30,this->menu->height());
         connect(this->menu, &TooltipMenu::message, this, &AddressesWidget::message);
         connect(this->menu, &TooltipMenu::onEditClicked, this, &SendWidget::onContactMultiClicked);
         connect(this->menu, &TooltipMenu::onDeleteClicked, this, &SendWidget::onDeleteClicked);
-        connect(this->menu, &TooltipMenu::onCopyClicked, this, &SendWidget::onEntryMemoClicked);
     } else {
         this->menu->hide();
     }
@@ -900,14 +779,6 @@ void SendWidget::onContactMultiClicked()
         dialog->deleteLater();
     }
 
-}
-
-void SendWidget::onEntryMemoClicked()
-{
-    if (focusedEntry) {
-        focusedEntry->launchMemoDialog();
-        menu->setCopyBtnText(tr("Memo"));
-    }
 }
 
 void SendWidget::onDeleteClicked()

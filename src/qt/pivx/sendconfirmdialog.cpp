@@ -29,11 +29,11 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
 
     // Labels
     setCssProperty(ui->labelWarning, "text-title2-dialog");
-    setCssProperty({ui->labelAmount, ui->labelSend, ui->labelInputs, ui->labelFee, ui->labelChange, ui->labelId, ui->labelSize, ui->labelStatus, ui->labelConfirmations, ui->labelDate, ui->labelMemo}, "text-subtitle");
-    setCssProperty({ui->labelDividerID, ui->labelDividerOutputs, ui->labelDividerPrevtx, ui->labelDividerFeeSize, ui->labelDividerChange, ui->labelDividerConfs, ui->labelDividerMemo}, "container-divider");
-    setCssProperty({ui->textAmount, ui->textSendLabel, ui->textInputs, ui->textFee, ui->textChange, ui->textId, ui->textSize, ui->textStatus, ui->textConfirmations, ui->textDate, ui->textMemo} , "text-body3-dialog");
+    setCssProperty({ui->labelAmount, ui->labelSend, ui->labelInputs, ui->labelFee, ui->labelChange, ui->labelId, ui->labelSize, ui->labelStatus, ui->labelConfirmations, ui->labelDate}, "text-subtitle");
+    setCssProperty({ui->labelDividerID, ui->labelDividerOutputs, ui->labelDividerPrevtx, ui->labelDividerFeeSize, ui->labelDividerChange, ui->labelDividerConfs}, "container-divider");
+    setCssProperty({ui->textAmount, ui->textSendLabel, ui->textInputs, ui->textFee, ui->textChange, ui->textId, ui->textSize, ui->textStatus, ui->textConfirmations, ui->textDate} , "text-body3-dialog");
 
-    setCssProperty({ui->pushCopy, ui->pushCopyMemo}, "ic-copy-big");
+    setCssProperty(ui->pushCopy, "ic-copy-big");
     setCssProperty({ui->pushInputs, ui->pushOutputs}, "ic-arrow-down");
     setCssProperty(ui->btnEsc, "ic-close");
 
@@ -44,9 +44,6 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
     // hide change address for now
     ui->contentChangeAddress->setVisible(false);
     ui->labelDividerChange->setVisible(false);
-
-    // Memo text
-    ui->textMemo->setProperty("cssClass","edit-primary-no-border");
 
     setCssProperty({ui->labelOutputIndex, ui->textSend, ui->labelTitlePrevTx}, "text-body2-dialog");
 
@@ -134,30 +131,10 @@ void TxDetailDialog::setData(WalletModel *_model, const QModelIndex &index)
         ui->textStatus->setText(QString::fromStdString(rec->statusToString()));
         ui->textSize->setText(QString::number(rec->size) + " bytes");
 
-        // If there is a memo in this record
-        if (rec->memo) {
-            ui->textMemo->insertPlainText(QString::fromStdString(*rec->memo));
-            ui->contentMemo->setVisible(true);
-            ui->labelDividerMemo->setVisible(true);
-            ui->textMemo->adjustSize();
-        } else {
-            ui->contentMemo->setVisible(false);
-            ui->labelDividerMemo->setVisible(false);
-            adjustSize();
-        }
-
         connect(ui->pushCopy, &QPushButton::clicked, [this](){
             GUIUtil::setClipboard(QString::fromStdString(this->txHash.GetHex()));
             if (!snackBar) snackBar = new SnackBar(nullptr, this);
             snackBar->setText(tr("ID copied"));
-            snackBar->resize(this->width(), snackBar->height());
-            openDialog(snackBar, this);
-        });
-
-        connect(ui->pushCopyMemo, &QPushButton::clicked, [this, rec](){
-            GUIUtil::setClipboard(QString::fromStdString(*rec->memo));
-            if (!snackBar) snackBar = new SnackBar(nullptr, this);
-            snackBar->setText(tr("Memo copied"));
             snackBar->resize(this->width(), snackBar->height());
             openDialog(snackBar, this);
         });
@@ -205,21 +182,9 @@ void TxDetailDialog::setData(WalletModel *_model, WalletModelTransaction* _tx)
             ui->textSendLabel->setText(recipient.label);
         }
         ui->pushOutputs->setVisible(false);
-
-        // If there is a single output, then show the memo.
-        if (!recipient.message.isEmpty()) {
-            ui->textMemo->insertPlainText(recipient.message);
-            ui->contentMemo->setVisible(true);
-            ui->labelDividerMemo->setVisible(true);
-        } else {
-            ui->contentMemo->setVisible(false);
-            ui->labelDividerMemo->setVisible(false);
-        }
     } else {
         ui->textSendLabel->setText(QString::number(nRecipients) + " recipients");
         ui->textSend->setVisible(false);
-        ui->contentMemo->setVisible(false);
-        ui->labelDividerMemo->setVisible(false);
     }
 
     int inputsSize = (walletTx->sapData && !walletTx->sapData->vShieldedSpend.empty()) ? walletTx->sapData->vShieldedSpend.size() : walletTx->vin.size();

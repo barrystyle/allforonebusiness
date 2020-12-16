@@ -81,7 +81,7 @@ ContactsDropdown::ContactsDropdown(int minWidth, int minHeight, PWidget *parent)
     connect(list, &QListView::clicked, this, &ContactsDropdown::handleClick);
 }
 
-void ContactsDropdown::setWalletModel(WalletModel* _model, const QStringList& type){
+void ContactsDropdown::setWalletModel(WalletModel* _model, const QString& type){
     if (!model) {
         model = _model->getAddressTableModel();
         this->filter = new AddressFilterProxyModel(type, this);
@@ -94,7 +94,7 @@ void ContactsDropdown::setWalletModel(WalletModel* _model, const QStringList& ty
     }
 }
 
-void ContactsDropdown::setType(const QStringList& type) {
+void ContactsDropdown::setType(const QString& type) {
     if (filter)
         filter->setType(type);
 }

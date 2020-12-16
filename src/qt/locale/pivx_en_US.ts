@@ -450,8 +450,8 @@ for staking</translation>
         <translation>Savings</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 AFO</source>
+        <translation>0,00 AFO</translation>
     </message>
     <message>
         <source>address</source>
@@ -492,8 +492,8 @@ for staking</translation>
         <translation>Coin Selection</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Select PIV Outputs to Spend</translation>
+        <source>Select AFO Outputs to Spend</source>
+        <translation>Select AFO Outputs to Spend</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -520,8 +520,8 @@ for staking</translation>
         <translation>Amount</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 AFO</source>
+        <translation>0.00 AFO</translation>
     </message>
     <message>
         <source>0</source>
@@ -785,8 +785,8 @@ stake on your behalf, while you keep the keys securely offline.</translation>
         <translation>Enter owner address</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Accept PIV delegation / Delegate PIV</translation>
+        <source>Accept AFO delegation / Delegate AFO</source>
+        <translation>Accept AFO delegation / Delegate AFO</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -991,8 +991,8 @@ address</translation>
         <translation>View your account's history</translation>
     </message>
     <message>
-        <source>How to get PIV</source>
-        <translation>How to get PIV</translation>
+        <source>How to get AFO</source>
+        <translation>How to get AFO</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1015,8 +1015,8 @@ address</translation>
         <translation>Filter by</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Amount of PIV and zPIV staked.</translation>
+        <source>Amount of AFO and zPIV staked.</source>
+        <translation>Amount of AFO and zPIV staked.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1363,8 +1363,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Create New Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 AFO (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 AFO (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1383,8 +1383,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Make sure you have this amount of coins.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AFO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AFO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Enable automatic minting of PIV units to zPIV</translation>
+        <source>Enable automatic minting of AFO units to zPIV</source>
+        <translation>Enable automatic minting of AFO units to zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
@@ -1916,16 +1916,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Enable Automint Addresses</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming AFO which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming AFO which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Percentage of autominted zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AFO for this denomination is available</source>
+        <translation>Wait with automatic conversion to Zerocoin until enough AFO for this denomination is available</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2941,8 +2941,8 @@ Address: %4
         <translation>No address</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV</source>
-        <translation>Scan the QR code or copy the address to receive PIV</translation>
+        <source>Scan the QR code or copy the address to receive AFO</source>
+        <translation>Scan the QR code or copy the address to receive AFO</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -3071,8 +3071,8 @@ Address: %4
         <translation>Amount</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>AFO</source>
+        <translation>AFO</translation>
     </message>
     <message>
         <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information</source>
@@ -3197,8 +3197,8 @@ Address: %4
         <translation>Recommended</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilobyte</translation>
+        <source>AFO/kilobyte</source>
+        <translation>AFO/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3841,8 +3841,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>1) What is PIVX?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Why are my PIV unspendable?</translation>
+        <source>2) Why are my AFO unspendable?</source>
+        <translation>2) Why are my AFO unspendable?</translation>
     </message>
     <message>
         <source>https://PIVX.org/</source>
@@ -3891,8 +3891,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Why are my PIV unspendable?</translation>
+        <source>Why are my AFO unspendable?</source>
+        <translation>Why are my AFO unspendable?</translation>
     </message>
     <message>
         <source>
@@ -3919,8 +3919,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake PIV?</source>
-        <translation>How do I stake PIV?</translation>
+        <source>How do I stake AFO?</source>
+        <translation>How do I stake AFO?</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of PIVX with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (pivx-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -3973,14 +3973,14 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>What is a Masternode Controller?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AFO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AFO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 AFO secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4012,7 +4012,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4022,7 +4022,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 AFO secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4054,7 +4054,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4067,8 +4067,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>Frequently Asked Questions</translation>
     </message>
     <message>
-        <source>3) How do I stake PIV?</source>
-        <translation>3) How do I stake PIV?</translation>
+        <source>3) How do I stake AFO?</source>
+        <translation>3) How do I stake AFO?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -6165,8 +6165,8 @@ PIVX Core Wallet</translation>
         <translation>Invalid netmask specified in -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Recalculating PIV supply...</translation>
+        <source>Recalculating AFO supply...</source>
+        <translation>Recalculating AFO supply...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6493,8 +6493,8 @@ PIVX Core Wallet</translation>
         <translation>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in PIV) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Minimum positive amount (in PIV) allowed by GUI and RPC for the stake split threshold (default: %s)</translation>
+        <source>Minimum positive amount (in AFO) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Minimum positive amount (in AFO) allowed by GUI and RPC for the stake split threshold (default: %s)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
@@ -7006,8 +7006,8 @@ PIVX Core Wallet</translation>
         <translation>Send</translation>
     </message>
     <message>
-        <source>Send public coins (PIV)</source>
-        <translation>Send public coins (PIV)</translation>
+        <source>Send public coins (AFO)</source>
+        <translation>Send public coins (AFO)</translation>
     </message>
     <message>
         <source>PIVX address or contact label</source>

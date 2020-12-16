@@ -62,7 +62,6 @@ public:
 public Q_SLOTS:
     void clear();
     void updateDisplayUnit();
-    void onMemoClicked();
 
 Q_SIGNALS:
     void removeEntry(SendMultiRow* entry);

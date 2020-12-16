@@ -449,8 +449,8 @@ for staking</source>
         <translation>Сбережения</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0,00 AFO</source>
+        <translation>0.00 AFO</translation>
     </message>
     <message>
         <source>address</source>
@@ -491,8 +491,8 @@ for staking</source>
         <translation>Выбор монеты</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Выберите PIV выходы для расходов</translation>
+        <source>Select AFO Outputs to Spend</source>
+        <translation>Выберите AFO выходы для расходов</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -519,8 +519,8 @@ for staking</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV </translation>
+        <source>0.00 AFO</source>
+        <translation>0.00 AFO </translation>
     </message>
     <message>
         <source>0</source>
@@ -776,15 +776,15 @@ for staking</source>
     <message>
         <source>You can delegate your PIVs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Вы можете делегировать свои PIV, позволяя горячему узлу (онлайн-узлу, работаещему 24/7) делать стекинг от вашего имени, в то время как ключи надежно хранятся в автономном режиме.</translation>
+        <translation>Вы можете делегировать свои AFO, позволяя горячему узлу (онлайн-узлу, работаещему 24/7) делать стекинг от вашего имени, в то время как ключи надежно хранятся в автономном режиме.</translation>
     </message>
     <message>
         <source>Enter owner address</source>
         <translation>Введите адрес владельца</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Принять делегацию PIV / Делегировать PIV</translation>
+        <source>Accept AFO delegation / Delegate AFO</source>
+        <translation>Принять делегацию AFO / Делегировать AFO</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -988,8 +988,8 @@ address</source>
         <translation>Обзор истории вашего аккаунта</translation>
     </message>
     <message>
-        <source>How to get PIV</source>
-        <translation>Как получить PIV</translation>
+        <source>How to get AFO</source>
+        <translation>Как получить AFO</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1012,8 +1012,8 @@ address</source>
         <translation>Сортировать по</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Сумма добытых PIV и zPIV</translation>
+        <source>Amount of AFO and zPIV staked.</source>
+        <translation>Сумма добытых AFO и zPIV</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1376,8 +1376,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Убедитесь, что у вас есть такое количество монет.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 PIV. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AFO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 AFO. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1892,8 +1892,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Невозможно автоматически отчеканить единицы PIV для zPIV</translation>
+        <source>Enable automatic minting of AFO units to zPIV</source>
+        <translation>Невозможно автоматически отчеканить единицы AFO для zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
@@ -1908,16 +1908,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Включить адреса с автоматической чеканкой</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих PIV, которые автоматически конвертируются в zPIV благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming AFO which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих AFO, которые автоматически конвертируются в zPIV благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Процент  авточеканненых zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно PIV для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AFO for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно AFO для этой номинации.</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2934,8 +2934,8 @@ Address: %4
         <translation>Нет адресов</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV</source>
-        <translation>Сканируйте QR-код или скопируйте адрес для получения PIV</translation>
+        <source>Scan the QR code or copy the address to receive AFO</source>
+        <translation>Сканируйте QR-код или скопируйте адрес для получения AFO</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -3064,8 +3064,8 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>AFO</source>
+        <translation>AFO</translation>
     </message>
     <message>
         <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information</source>
@@ -3190,8 +3190,8 @@ Address: %4
         <translation>рекомендуемые</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/килобайт</translation>
+        <source>AFO/kilobyte</source>
+        <translation>AFO/килобайт</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3833,8 +3833,8 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>1) Что такое PIVX?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Почему мои PIV невозможно потратить?</translation>
+        <source>2) Why are my AFO unspendable?</source>
+        <translation>2) Почему мои AFO невозможно потратить?</translation>
     </message>
     <message>
         <source>https://PIVX.org/</source>
@@ -3881,8 +3881,8 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Почему мои PIV невозможно потратить?</translation>
+        <source>Why are my AFO unspendable?</source>
+        <translation>Почему мои AFO невозможно потратить?</translation>
     </message>
     <message>
         <source>
@@ -3908,8 +3908,8 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake PIV?</source>
-        <translation>Как мне запустить стекинг PIV?</translation>
+        <source>How do I stake AFO?</source>
+        <translation>Как мне запустить стекинг AFO?</translation>
     </message>
     <message>
         <source>4</source>
@@ -3941,7 +3941,7 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 AFO secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3973,7 +3973,7 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3981,7 +3981,7 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-Мастернода - это компьютер, на котором запущен базовый кошелек PIVX с полным узлом и для которого требуется обеспечение в 10000 PIV для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+Мастернода - это компьютер, на котором запущен базовый кошелек PIVX с полным узлом и для которого требуется обеспечение в 10000 AFO для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
 
 Мгновенные транзакции (SwiftX)
 Децентрализованное управление (Голосование по предложениям)
@@ -4000,7 +4000,7 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
 
 Требования:
 
-10 000 PIV для каждой мастерноды
+10 000 AFO для каждой мастерноды
 Должен храниться в основном кошельке
 Требуется выделенный IP-адрес
 Кошелек мастерноды должен оставаться в сети</translation>
@@ -4010,8 +4010,8 @@ PIVX использует консенсус PoS (Proof of Stake), позвол�
         <translation>Часто задаваемые вопросы</translation>
     </message>
     <message>
-        <source>3) How do I stake PIV?</source>
-        <translation>3) Как мне запустить стекинг PIV?</translation>
+        <source>3) How do I stake AFO?</source>
+        <translation>3) Как мне запустить стекинг AFO?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -6071,8 +6071,8 @@ PIVX Core Wallet</source>
         <translation>Недопустимая сетевая маска, указанная в -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Перерасчет предложения PIV...</translation>
+        <source>Recalculating AFO supply...</source>
+        <translation>Перерасчет предложения AFO...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6399,8 +6399,8 @@ PIVX Core Wallet</source>
         <translation>Комиссия (в %s/Кбайт) меньше этого значения считается с нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in PIV) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Минимальная положительная сумма (в PIV), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
+        <source>Minimum positive amount (in AFO) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Минимальная положительная сумма (в AFO), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
@@ -6908,8 +6908,8 @@ PIVX Core Wallet</source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <source>Send public coins (PIV)</source>
-        <translation>Отправить монеты (PIV)</translation>
+        <source>Send public coins (AFO)</source>
+        <translation>Отправить монеты (AFO)</translation>
     </message>
     <message>
         <source>PIVX address or contact label</source>

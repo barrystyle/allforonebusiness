@@ -740,13 +740,13 @@ QWidget#PrivacyDialog QLabel {
 border:0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zPIVLabel {
+QWidget#PrivacyDialog QLabel#zAFOLabel {
 font-size:14px;
 color:#ffffff;
 background-color:#5c4c7c;
 }
 
-QWidget#PrivacyDialog QLabel#oPIVLabel {
+QWidget#PrivacyDialog QLabel#oAFOLabel {
 font-size:14px;
 color:#ffffff;
 background-color:#5c4c7c;
@@ -913,7 +913,7 @@ background-color:#ffffff;
 
 QLabel#labelOverviewHeaderRight {
 qproperty-alignment: 'AlignVCenter | AlignRight';
-background-image: url(':/images/pivx_logo_horizontal');
+background-image: url(':/images/allforonebusiness_logo_horizontal');
 background-repeat: no-repeat;
 }
 
@@ -1556,7 +1556,7 @@ QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::indicator { /* Coin
 
 }
 
-QDialog#ZPivControlDialog .QTreeWidget#treeWidget { /* zPIV Control Widget Container */
+QDialog#ZAfoControlDialog .QTreeWidget#treeWidget { /* zPIV Control Widget Container */
 outline:0;
 background-color:#ffffff;
 border:1px solid #333;

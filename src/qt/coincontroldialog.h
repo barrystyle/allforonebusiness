@@ -52,7 +52,7 @@ public:
     void updateView();
     void refreshDialog();
     void clearPayAmounts();
-    void addPayAmount(const CAmount& amount, bool isShieldedRecipient);
+    void addPayAmount(const CAmount& amount);
     void setSelectionType(bool isTransparent) { fSelectTransparent = isTransparent; }
 
     CCoinControl* coinControl;
@@ -64,8 +64,7 @@ private:
     int sortColumn;
     Qt::SortOrder sortOrder;
     bool forDelegation;
-    // pair (recipient amount, ishielded recipient)
-    std::vector<std::pair<CAmount, bool>> payAmounts{};
+    QList<CAmount> payAmounts{};
     unsigned int nSelectableInputs{0};
 
     // whether should show available utxo or notes.

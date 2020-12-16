@@ -349,7 +349,7 @@ voor bewijs van Inzet</translation>
     </message>
     <message>
         <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw PIV's kunnen stelen.</translation>
+        <translation>PIVX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw AFO's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -418,8 +418,8 @@ voor bewijs van Inzet</translation>
         <translation>Besparingen</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 AFO</source>
+        <translation>0,00 AFO</translation>
     </message>
     <message>
         <source>address</source>
@@ -460,8 +460,8 @@ voor bewijs van Inzet</translation>
         <translation>Munt Selectie</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Selecteer PIV Outputs om te besteden</translation>
+        <source>Select AFO Outputs to Spend</source>
+        <translation>Selecteer AFO Outputs om te besteden</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -488,8 +488,8 @@ voor bewijs van Inzet</translation>
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 AFO</source>
+        <translation>0.00 AFO</translation>
     </message>
     <message>
         <source>0</source>
@@ -749,8 +749,8 @@ voor je laten staken, terwijl je de sleutels veilig offline opslag bewaart.</tra
         <translation>Voer eigenaarsadres in</translation>
     </message>
     <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Accepteer PIV delegatie / Delegeer PIV</translation>
+        <source>Accept AFO delegation / Delegate AFO</source>
+        <translation>Accepteer AFO delegatie / Delegeer AFO</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
@@ -944,8 +944,8 @@ address</source>
         <translation>Filter volgens</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Hoeveelheid aan gestaked PIV en zPIV.</translation>
+        <source>Amount of AFO and zPIV staked.</source>
+        <translation>Hoeveelheid aan gestaked AFO en zPIV.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1284,8 +1284,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Creëer Nieuwe Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een PIVX Masternode te creëren moet u 10.000 PIV (de eenheid van PIVX) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 AFO (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een PIVX Masternode te creëren moet u 10.000 AFO (de eenheid van PIVX) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1304,8 +1304,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Zorg ervoor dat je deze hoeveelheid munten hebt.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 PIV zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AFO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 AFO zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1747,8 +1747,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Schakel automatisch slaan van PIV-eenheden in op zPIV</translation>
+        <source>Enable automatic minting of AFO units to zPIV</source>
+        <translation>Schakel automatisch slaan van AFO-eenheden in op zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
@@ -1763,16 +1763,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende PIV die automatisch wordt omgezet naar zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming AFO which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende AFO die automatisch wordt omgezet naar zPIV via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Percentage autominted zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg PIV voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AFO for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg AFO voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2838,8 +2838,8 @@ Adres: %4
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>AFO</source>
+        <translation>AFO</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2944,8 +2944,8 @@ Adres: %4
         <translation>Aanbevolen</translation>
     </message>
     <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilobyte</translation>
+        <source>AFO/kilobyte</source>
+        <translation>AFO/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3522,8 +3522,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>1) Wat is PIVX?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Waarom is mijn PIV niet besteedbaar?</translation>
+        <source>2) Why are my AFO unspendable?</source>
+        <translation>2) Waarom is mijn AFO niet besteedbaar?</translation>
     </message>
     <message>
         <source>1</source>
@@ -3568,8 +3568,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Waarom is mijn PIV niet besteedbaar?</translation>
+        <source>Why are my AFO unspendable?</source>
+        <translation>Waarom is mijn AFO niet besteedbaar?</translation>
     </message>
     <message>
         <source>
@@ -3620,14 +3620,14 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Wat is een Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 PIV onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AFO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 AFO onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 AFO secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3659,7 +3659,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3669,7 +3669,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            Een masternode is een computer met een volledige node PIVX core portemonnee met een
-                           vereiste van 10.000 PIV onderpand om extra diensten te kunnen verlenen
+                           vereiste van 10.000 AFO onderpand om extra diensten te kunnen verlenen
                            aan het netwerk en in ruil daarvoor ontvangt u regelmatig een deel van de blokbeloning.
                            Deze diensten omvatten::
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3701,7 +3701,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Vereisten:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 AFO per Masternode instance&lt;/li&gt;
                            &lt;li&gt;Moet in een kernportemonnee worden opgeborgen&lt;/li&gt;
                            &lt;li&gt;Vereist een vast IP-adres
                            &lt;li&gt;Masternode portemonnee moet online blijven&lt;/li&gt;
@@ -5608,8 +5608,8 @@ PIVX Core Portemonnee</translation>
         <translation>Ongeldige netmask opgegeven in -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Hercalculatie van PIV aanbod...</translation>
+        <source>Recalculating AFO supply...</source>
+        <translation>Hercalculatie van AFO aanbod...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

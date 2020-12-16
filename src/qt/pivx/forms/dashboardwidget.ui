@@ -454,7 +454,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>How to get PIV</string>
+            <string>How to get AFO</string>
            </property>
           </widget>
          </item>
@@ -519,7 +519,7 @@
             <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
-               <string>Amount of PIV and zPIV staked.</string>
+               <string>Amount of AFO.</string>
               </property>
              </widget>
             </item>
@@ -560,24 +560,14 @@
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0">
           <property name="spacing">
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="labelAmountPiv">
+           <widget class="QLabel" name="labelAmountAfo">
             <property name="text">
-             <string notr="true">0 PIV</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="labelAmountZpiv">
-            <property name="text">
-             <string notr="true">0 zPIV</string>
+             <string notr="true">0 AFO</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -673,7 +663,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarePiv">
+                 <widget class="QLabel" name="labelSquareAfo">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -692,9 +682,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelPiv">
+                 <widget class="QLabel" name="labelAfo">
                   <property name="text">
-                   <string notr="true">PIV</string>
+                   <string notr="true">AFO</string>
                   </property>
                  </widget>
                 </item>
@@ -715,7 +705,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarezPiv">
+                 <widget class="QLabel" name="labelSquarezAfo">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -730,13 +720,6 @@
                   </property>
                   <property name="text">
                    <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="labelZpiv">
-                  <property name="text">
-                   <string notr="true">zPIV</string>
                   </property>
                  </widget>
                 </item>

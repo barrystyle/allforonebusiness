@@ -53,7 +53,6 @@ public Q_SLOTS:
     void onChangeCustomFeeClicked();
     void onCoinControlClicked();
     void onOpenUriClicked();
-    void onShieldCoinsClicked();
     void onValueChanged();
     void refreshAmounts();
     void changeTheme(bool isLightTheme, QString &theme) override;
@@ -62,11 +61,8 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
     void showEvent(QShowEvent *event) override;
 
-    void run(int type) override;
-    void onError(QString error, int type) override;
 
 private Q_SLOTS:
-    void onPIVSelected(bool _isTransparent);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -76,7 +72,6 @@ private Q_SLOTS:
     void onCheckBoxChanged();
     void onContactMultiClicked();
     void onDeleteClicked();
-    void onEntryMemoClicked();
     void onResetCustomOptions(bool fRefreshAmounts);
     void onResetSettings();
 

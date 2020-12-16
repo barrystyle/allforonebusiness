@@ -13,7 +13,7 @@ TxRow::TxRow(QWidget *parent) :
     ui(new Ui::TxRow)
 {
     ui->setupUi(this);
-    ui->lblAmountBottom->setVisible(false);
+//  ui->lblAmountBottom->setVisible(false);
 }
 
 void TxRow::init(bool isLightTheme)
@@ -25,7 +25,7 @@ void TxRow::init(bool isLightTheme)
 void TxRow::showHideSecondAmount(bool show) {
     if (show != isDoubleAmount) {
         isDoubleAmount = show;
-        ui->lblAmountBottom->setVisible(show);
+//      ui->lblAmountBottom->setVisible(show);
     }
 }
 
@@ -59,8 +59,8 @@ void TxRow::setLabel(QString str)
 
 void TxRow::setAmount(QString top, QString bottom)
 {
-    ui->lblAmountTop->setText(top);
-    ui->lblAmountBottom->setText(bottom);
+//  ui->lblAmountTop->setText(top);
+//  ui->lblAmountBottom->setText(bottom);
 }
 
 void TxRow::setType(bool isLightTheme, int type, bool isConfirmed)
@@ -149,8 +149,8 @@ void TxRow::setType(bool isLightTheme, int type, bool isConfirmed)
     } else {
         setConfirmStatus(true);
     }
-    setCssProperty(ui->lblAmountTop, css, true);
-    if (isDoubleAmount) setCssProperty(ui->lblAmountBottom, cssAmountBottom, true);
+    setCssProperty(ui->lblAmount, css, true);
+//  if (isDoubleAmount) setCssProperty(ui->lblAmountBottom, cssAmountBottom, true);
     ui->icon->setIcon(QIcon(path));
 }
 
